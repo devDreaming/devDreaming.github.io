@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    position: relative;
+    padding-bottom: 7rem;
+    min-height: 100vh;
+}
+
+.marble-back {
+    background-image: url(images/rawpixel-34.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.container, nav {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@include respond(big-desktop) {
+    .container, nav {
+        max-width: 1300px;
+    }
+}
+
+
+//=========MEDIA QUERIES========
+@include respond(tab-land) {
+
+}
+
+@include respond(tab-port) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@include respond(phone) {
+
+}
+
+html {
+    font-size: 102%;
+
+    @include respond(big-desktop) {
+        font-size: 135%; //1rem = 12px, 12/16 = 75%
+    }
+
+    @include respond(tab-land) {
+        font-size: 99%; //1rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) {
+        font-size: 95%; //1rem = 8px, 8/16 = 50%
+    }
+}

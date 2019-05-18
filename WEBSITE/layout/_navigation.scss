@@ -1,0 +1,52 @@
+
+
+.current-page {
+    font-weight: bold;
+}
+
+.header {
+    height: 5vh;
+    min-height: 2.5rem; 
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1000; 
+
+    & .header-nav {
+        display: flex;
+        width: 100%;
+        
+
+        & ul {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 2rem;
+            width: 100%;
+
+            & li {
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    & .header-search {
+        margin-right: 2rem;
+        display: flex;
+        
+
+
+        & input {
+            border-radius: 5px;
+            padding: .25rem;
+            color: $color-main;
+            margin-right: 1rem;
+        }
+
+        & button {
+            color: black;
+        }
+        
+    }
+
+}
