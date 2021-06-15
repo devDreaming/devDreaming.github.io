@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "live-server": "^1.2.1",
-    "postcss": "^7.0.14"
+    "postcss": "^7.0.36"
   }
 }
 
